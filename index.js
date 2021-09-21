@@ -38,9 +38,17 @@ for (let i = 0; i < 5; i++) {
     const p1 = prompt("Enter rock, paper, or scissors to play");
     const p2 = computerPlay();
     winner = playRound(p1, p2);
-    if (winner === 0) { ties++ };
-    if (winner === 1) { p1Score++ };
-    if (winner === 2) { p2Score++ }; 
+    switch (winner) {
+        case 0:
+            ties++;
+            break;
+        case 1:
+            p1Score++;
+            break;
+        case 2:
+            p2Score++;
+            break;
+    }
 }
 
 console.table( {"Player1": p1Score, "Player2": p2Score, "TIES": ties} );
