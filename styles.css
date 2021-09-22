@@ -21,6 +21,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+        box-sizing: border-box;
 }
 
 :root {
@@ -36,7 +37,33 @@ html {
 h1 {	
   text-align: center;
   padding: 20px;
-  font: 2rem bold;
+  font: 2.5rem bold;
   color: var(--light-fg);
   background-color: var(--dark-bg);
+}
+
+h2 {
+  text-align: center;
+  font: 2rem bold;
+  color: var(--dark-bg);
+}
+
+img {
+  width: 75%;
+  height: auto;
+}
+
+button {
+  border: 8px solid transparent;
+  margin: 0 10px;
+}
+
+button:hover {
+  border: 8px dashed orange;
+}
+
+#choices {
+  padding: 2%;
+  display: flex;
+  flex: 0 0 auto;
 }
